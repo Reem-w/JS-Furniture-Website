@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>login</title>
+</head>
+
+<body style="background-image: url(./images/login.jpg);  background-size: cover;">
+
+    <div class="row col-4 mx-auto mt-5 mb-5 ">
+        <div class="card " style="width: 25rem;">
+            <h5 class="card-title text-center mt-5 mb-2">Welcome To Furnish</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-center">Please Login to start</h6>
+            <div class="card-body  pb-5 d-flex flex-column align-items-center">
+
+                <div class="mb-3 mx-auto ">
+                    <input type="text" id="NameInput" name="NameInput" placeholder="Enter your Name">
+                    <p class="requiredName hide">This Field is required</p>
+                    <p class="nameLength nameError hide">Name should :<br> be > 3 letters <br> only contain characters</p>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" id="EmailInput" name="EmailInput" placeholder="Enter your Email">
+                    <p class="requiredEmail hide">This Field is required</p>
+                    <p class="validEmail hide">This Email is not Valid</p>
+                </div>
+
+                <div class="mb-3">
+                    <input type="password" id="PasswordInput" name="PasswordInput" placeholder="Enter your Password">
+                    <p class="requiredPass hide">This Field is required</p>
+                    <p class="validPass hide">password should :<br>be > 8 digits<br>include both Capital/Small </p>
+                </div>
+
+                <div class="mb-5">
+                    <input type="password" id="ConfirmPassInput" name="ConfirmPassInput" placeholder="Confirm Password">
+                    <p class="requiredConfirm hide">This Field is required</p>
+                    <p class="matchPassword hide">passwords Don't match</p>
+                </div>
+            
+                <button type="button" class="btn btn-outline-dark "
+                onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- My js code -->
+    <script src="./loginScript.js"></script>
+</body>
+
+</html>
